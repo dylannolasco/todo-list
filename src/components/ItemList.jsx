@@ -9,7 +9,7 @@ export default class ItemList extends Component {
     let onClickDelete = this.props.onClick;
     return (
       <div className="completeList">
-        {activities.map(activity => (<Item key={activity.id} id={activity.id} activity={activity.description} onClick={onClickDelete}/>))}
+        {activities.map((activity, index) => (<Item key={activity.id} id={activity.id} activity={activity.description} onClick={onClickDelete} count={index}/>))}
       </div>
     );
   }
