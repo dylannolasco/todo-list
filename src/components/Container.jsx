@@ -6,7 +6,7 @@ export default class Container extends Component {
   render () {
     return (
       <div className="container-p">
-        <h1 className="title-p">List to do</h1>
+        <h1 className="title-p">To do list</h1>
         <AddingThings/>
       </div>
     );
